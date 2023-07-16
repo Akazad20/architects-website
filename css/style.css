@@ -16,7 +16,7 @@
     margin-bottom: 15px;
     font-weight: 600;
 }
-section{
+section,footer{
     max-width: 1440px;
     padding:50px 200px;
 }
@@ -87,7 +87,7 @@ nav li a{
 }
 
 .team-contant-part{
-  
+  width: 100%;
     padding-left: 80px;
 }
 .team-contant-part h2{
@@ -100,6 +100,74 @@ nav li a{
     font-weight: 500;
     line-height: 25px;
     text-align: justify;
+}
+/* fatc style part */
+.fact-curd{
+    display: flex;
+    justify-content:space-around;
+    gap:20px;
+   
+}
+.single-factcurd{
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    border:1px solid #ff900e;
+    padding:18px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.single-factcurd h1{
+    font-weight:700;
+        font-size: 2em;
+}
+.single-factcurd h6{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+
+}
+
+.fact-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#131313;
+}
+.fact-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: justify;
+}
+/* spontSponsors- styele */
+.sponse{
+    text-align: center;
+    margin:0 auto;
+}
+.sponse h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#131313;
+    margin-bottom: 10px;
+}
+.sponse p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px;
+    text-align:center;
+}
+.Sponsors-image{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 70px;
+    gap: 20px;
+}
+.Sponsors-image img{
+    width: 140px;
 }
 
 /*  responsive desing */
@@ -130,14 +198,27 @@ nav li a{
         grid-template-columns: 1fr;
         width: 100%;
     }
-.team-image-part img{
+    .team-image-part img{
     width: 100%;
 }
-.team-contant-part{
+   .team-contant-part{
     padding:20px;
-    
 }
-
+.fact-curd{
+    flex-direction: column;
+    gap:30px;
+    width:100%;
+}
+.single-factcurd{
+    width: 100%;
+}
+.Sponsors-image{
+    flex-direction: column;
+    column-gap: 30px;
+}
+.Sponsors-image img{
+    width: 100%;
+}
     
 }
 
@@ -162,4 +243,21 @@ nav li a{
     
         padding:10px;
       }
+      .fact-curd{
+        gap:30px;
+        
+    }
+    .single-factcurd{
+        width: 100%;
+    }
+    .fact{
+        padding: 20px;
+    }
+    .Sponsors-image{
+        flex-direction: column;
+        column-gap: 30px;
+    }
+    .Sponsors-image img{
+        width: 100%;
+    }
 }
