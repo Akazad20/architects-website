@@ -6,3 +6,64 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+.btn-prymary{
+    padding:18px 27px;
+    background: tomato;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    color:#fff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.header{
+    padding:50px 200px;
+    background: rgba(255, 144, 14, 0.10);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav >ul{
+    display: flex;
+   
+
+}
+.nav-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#131313;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+nav li a{
+    text-decoration: none;
+    color:#424242;
+    text-transform: uppercase;
+   /*  font-weight: 500; */
+   
+}
+/* bannar style */
+.bannar-contant{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banar-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color:#131313;
+}
+.bannar-contant p{
+    color:#727272;
+    font-size: 1rem;
+}
+.bannar img{
+    max-width: 100%;
+}
