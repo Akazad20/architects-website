@@ -8,7 +8,7 @@
 }
 .btn-prymary{
     padding:18px 27px;
-    background: tomato;
+    background: #ff900e;
     font-size: 2rem;
     border: none;
     border-radius: 8px;
@@ -16,7 +16,10 @@
     margin-bottom: 15px;
     font-weight: 600;
 }
-
+section{
+    max-width: 1440px;
+    padding:50px 200px;
+}
 .header{
     padding:50px 200px;
     background: rgba(255, 144, 14, 0.10);
@@ -67,8 +70,40 @@ nav li a{
 .bannar img{
     max-width: 100%;
 }
+.team{
+    display: flex;
+    align-items: center;
+
+}
+.team-image-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.8rem;
+     width: 100%;
+  
+}
+.team-image-part img{
+    width: 100%;
+}
+
+.team-contant-part{
+  
+    padding-left: 80px;
+}
+.team-contant-part h2{
+        font-weight:700;
+        font-size: 2em;
+}
+.team-contant-part p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: justify;
+}
+
 /*  responsive desing */
-@media screen and (max-width:576px) {
+@media screen and (min-width:320px) and (max-width:576px) {
     .header{
         padding: 20px;
     }
@@ -84,14 +119,47 @@ nav li a{
     .banar-title{
         font-size: 2rem;
     }
+    section{
+        padding:50px;
+    }
+    .team{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .team-image-part{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+.team-image-part img{
+    width: 100%;
+}
+.team-contant-part{
+    padding:20px;
+    
+}
 
     
 }
+
 @media screen and (min-width:576px) and (max-width:960px) {
       .header{
       padding:50px;
       }
       nav{
         flex-direction: column;
+      }
+      .team{
+        padding: 20px;
+        flex-direction: column;
+        
+      }
+      .team-image-part{
+        width: 100%;
+    }
+   
+  
+      .team-contant-part{
+    
+        padding:10px;
       }
 }
